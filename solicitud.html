@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 2px solid #000;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .section div label {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .section div input {
+            flex: 2;
+        }
+        fieldset {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de Empleo</h1>
+        <section class="section">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <div>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div>
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                 <div>
+                    <label for="estado_civil">Estado Civil:</label>
+                    <input type="text" id="estado_civil" name="estado_civil" required>
+                </div>
+                <div>
+                    <label for="sueldo_deseado">Sueldo Mensual Deseado:</label>
+                    <input type="number" id="sueldo_deseado" name="sueldo_deseado" required>
+                </div>
+                <div>
+                    <label for="sueldo_aprobado">Sueldo Mensual Aprobado:</label>
+                    <input type="number" id="sueldo_aprobado" name="sueldo_aprobado">
+                </div>
+                <div>
+                    <label for="fecha_contratacion">Fecha de Contratación:</label>
+                    <input type="date" id="fecha_contratacion" name="fecha_contratacion">
+                </div>
+            </fieldset>
+        </section>
+        <section class="section">
+            <fieldset>
+                <legend>Experiencia Laboral</legend>
+                <div>
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" required>
+                </div>
+                <div>
+                    <label for="puesto">Puesto:</label>
+                    <input type="text" id="puesto" name="puesto" required>
+                </div>
+                <div>
+                    <label for="inicio">Fecha de Inicio:</label>
+                    <input type="date" id="inicio" name="inicio" required>
+                </div>
+                <div>
+                    <label for="fin">Fecha de Fin:</label>
+                    <input type="date" id="fin" name="fin">
+                </div>
+                <div>
+                    <label for="responsabilidades">Responsabilidades:</label>
+                    <input type="text" id="responsabilidades" name="responsabilidades" required>
+                </div>
+            </fieldset>
+        </section>
+        <section class="section">
+            <fieldset>
+                <legend>Educación</legend>
+                <div>
+                    <label for="institucion">Institución:</label>
+                    <input type="text" id="institucion" name="institucion" required>
+                </div>
+                <div>
+                    <label for="grado">Grado Obtenido:</label>
+                    <input type="text" id="grado" name="grado" required>
+                </div>
+                <div>
+                    <label for="fechas">Fechas de Estudio:</label>
+                    <input type="text" id="fechas" name="fechas" required>
+                </div>
+            </fieldset>
+        </section>
+        <section class="section">
+            <fieldset>
+                <legend>Referencias</legend>
+                <div>
+                    <label for="referencia">Nombre de Referencia:</label>
+                    <input type="text" id="referencia" name="referencia" required>
+                </div>
+                <div>
+                    <label for="relacion">Relación:</label>
+                    <input type="text" id="relacion" name="relacion" required>
+                </div>
+                <div>
+                    <label for="contacto">Número de Contacto:</label>
+                    <input type="tel" id="contacto" name="contacto" pattern="[0-9]{10}" required>
+                </div>
+            </fieldset>
+        </section>
+        <section class="section">
+            <fieldset>
+                <legend>Otros</legend>
+                <div>
+                    <label for="idiomas">Idiomas:</label>
+                    <input type="text" id="idiomas" name="idiomas" required>
+                </div>
+                <div>
+                    <label for="competencias">Competencias Técnicas:</label>
+                    <input type="text" id="competencias" name="competencias" required>
+                </div>
+                <div>
+                    <label for="certificaciones">Certificaciones:</label>
+                    <input type="text" id="certificaciones" name="certificaciones" required>
+                </div>
+            </fieldset>
+        </section>
+        <button onclick="window.print()">Imprimir Solicitud</button>
+    </div>
+</body>
+</html>
